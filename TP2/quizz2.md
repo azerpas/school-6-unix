@@ -16,7 +16,7 @@ Directly into the Shell output
 `wc`
 
 ### •	Quiz 2.6 :Quelle commande vous permet de transformer des minuscules en majuscules?
-
+`tr 'a-z' 'A-Z' < test.txt`
 
 ### •	Quiz 2.7 : Quelle commande faut-il utiliser pour classer alphabétiquement le contenu d'un fichier ?
 `sort`
