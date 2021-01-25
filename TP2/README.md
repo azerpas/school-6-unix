@@ -121,3 +121,41 @@ We use `type` to verify if a command is integrated into the shell. This command 
 
 `renice`: modify priority      
 `renice [+|-] nicenumber [option] [target]`
+
+## Regex (Expression régulières)
+
+Used with `grep` `egrep`     
+- `c`: character "c"
+- `.`: a character
+- `-`: range between
+- `*`: repetition
+- `^`: start of a line
+- `$`: end of a line
+- `{nbre}`: repetition of a char "nbre" times
+- `[...]`: range
+
+Exs: 
+- `.*`: a line
+- `^$`: empty line
+- `^début`: line starting with "début"
+- `\*.\\`
+- `[A-Z][a-z]{9}`
+
+### Grep
+
+`grep [options] [string] [files]` 
+**Options:**        
+- `i` ignore case
+- `l` list name of files
+- `c` number of lines matching
+- `n` number of line 
+
+
+### Sed
+
+`sed [addr1] [addr2] [!] command [options] [files...]`     
+
+- `sed '4d; 7d' test.txt` : delete lines 4 to 7
+- `sed '/Bonjour/,/Au Revoir/d' test.txt` : delete everything between "Bonjour" and "Au Revoir"
+- `sed 's/Paris/Montreal' test.txt` : substitue Paris to Montreal
+
