@@ -97,4 +97,27 @@ We use `type` to verify if a command is integrated into the shell. This command 
     - `P` sort by CPU usage
     - `M` sort by MEM usage
     - `k` to kill a process
-    
+
+### Signals
+
+- SIGSTOP (17)
+- SIGCONT (19)
+- SIGTERM (15)
+- SIGKILL (9)    
+ 
+`kill -SIGKILL [pid]`
+
+#### Commands
+
+- &: Start a task in background
+- `Jobs`: List actives jobs
+- `fg %1`: bring job 1 to front
+- `nohup`: to continue process when parent is killed
+
+#### Priorities
+
+`nice`: priority at launch    
+-20 (high) to +19 (low)    
+
+`renice`: modify priority      
+`renice [+|-] nicenumber [option] [target]`
