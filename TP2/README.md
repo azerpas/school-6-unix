@@ -159,3 +159,17 @@ Exs:
 - `sed '/Bonjour/,/Au Revoir/d' test.txt` : delete everything between "Bonjour" and "Au Revoir"
 - `sed 's/Paris/Montreal' test.txt` : substitue Paris to Montreal
 
+## Vi
+
+- Mode édition 
+- Mode commande     
+
+Commands
+- `:file name_file`: save as...
+- `:q!` force quit
+- `a` append
+- `A` append after line
+- `dd` delete line
+- `x>>` indent x lines after cursor 
+
+Edition
