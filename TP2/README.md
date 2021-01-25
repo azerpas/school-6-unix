@@ -29,3 +29,9 @@ File extension with jokers (wildcards)
 
 - `[aA]????`: 5 char starting with "a" or "A"
 - `[!0-9]*`: Every chains of char not starting with a number
+
+### Usage in Shell
+
+- `ls -l [fF]*`
+- `ls *.c | more`
+
