@@ -35,3 +35,34 @@ File extension with jokers (wildcards)
 - `ls -l [fF]*`
 - `ls *.c | more`
 
+## Flux & Pipes
+
+### Flux
+
+`<`: **in**      
+&       
+`>`: **out**
+
+`>>`: **appending**    
+
+#### I/O
+
+- &0: in
+- &1: out
+- &2: errors
+
+### Pipes
+
+`command1 | command2`
+
+### xargs
+
+`xargs [options] [command]`     
+
+- `ls f* | xargs cat`
+Print (cat) to Shell output the content of all files starting with "f*" 
+
+### /dev/null
+
+Used to delete error messages    
+`grep try /etc/* 2>/dev/null`
