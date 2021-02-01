@@ -18,3 +18,19 @@ First program that starts at computer launch.
 - `v` verbose 
       
 `hdparm -C /dev/hda`
+
+- `/proc` state of core, OS and process.
+- Only exists inside computer memory.
+- Read mode only, except `/proc/sys` in write mode
+- `/proc/[Number]`, infos on process
+- `/proc/[Number]/cmdline`, get cmdline process
+- `/proc/[Number]/cwd`, current directory of process
+- `/proc/uptime`
+- `/proc/sys/kernel`, infos and params about core
+- `/proc/sys/net`, infos and params about network
+- `/proc/partitions`
+- `/proc/mount`, infos and params mounted files
+- `/proc/devices`, infos and params devices
+- `/proc/bus`, infos and params bus
+- `/proc/version`, Unix version
+
