@@ -46,3 +46,19 @@ mkdir -p ./home/Maths
 ### 6.
 
 `ln -s ./home/LinuxOS/Module1/TP/TP1/ ./home/TP1_ls`
+
+### 7. 
+
+`mv ./home/LinuxOS/Module2/ ./home/Maths/`
+
+### 8.
+
+`chmod 705 ./home/Maths`
+
+### 9. 
+
+`umask u=rwx,g=rx,o=`
+
+### 11.
+
+`kill -SIGSTOP 296`
