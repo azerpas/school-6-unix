@@ -19,6 +19,8 @@ First program that starts at computer launch.
       
 `hdparm -C /dev/hda`
 
+## Proc
+
 - `/proc` state of core, OS and process.
 - Only exists inside computer memory.
 - Read mode only, except `/proc/sys` in write mode
@@ -33,4 +35,17 @@ First program that starts at computer launch.
 - `/proc/devices`, infos and params devices
 - `/proc/bus`, infos and params bus
 - `/proc/version`, Unix version
+- `/proc/ioports`, list I/O ports
 
+## Hardware Abstraction Layer
+
+**HAL**     
+
+**daemon HAL**: Detect new devices and handled them. Warn DBUS
+     
+`hal-device-manager &`: gui interface
+
+## Udev
+
+- `udev` handled devices in `/dev`
+- 
