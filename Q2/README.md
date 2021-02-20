@@ -92,12 +92,13 @@ Il n'y a que le superuser qui peut lancer des commandes avec nice<0 (+fort)
 
 ## 4. Édition de base des fichiers
 
-- i - Insert at cursor (goes into insert mode)
-- a - Write after cursor (goes into insert mode)
-- A - Write at the end of line (goes into insert mode)
-- ESC - Terminate insert mode.
-- u - Undo last change.
-- U - Undo all changes to the entire line.
-- o - Open a new line (goes into insert mode)
-- dd - Delete line.
-
+- i: Insert at cursor (goes into insert mode)
+- a: Write after cursor (goes into insert mode)
+- A: Write at the end of line (goes into insert mode)
+- ESC: Terminate insert mode.
+- u: Undo last change.
+- U: Undo all changes to the entire line.
+- o: Open a new line (goes into insert mode)
+- dd: Delete line.
+- yy: Copy current line with /n
+- p: Paste
