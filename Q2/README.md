@@ -56,3 +56,48 @@ $ fg %1
 `ps -eH --forest`: Renvoi les process sous forme de hiérarchie    
 Related commands: `pgrep`, `pkill`     
 - `top`: Informations sur les process courants de façon interactive 
+
+## 2. Modifier les priorités d'exécution du processus
+
+- `nice`: Lancer une commande avec une priorité entre 19 (faible) et -20 (fort)     
+Il n'y a que le superuser qui peut lancer des commandes avec nice<0 (+fort)     
+`$ nice -n 19 tar cvzf archive.tgz largefile`      
+- `renice`: Modifier la priorité d'un process dans le shell
+	- `-n`: priority
+	- `-p`: pid
+	- `-u`: user
+	- `-g`: group 
+
+## 3. Recherche de fichiers texte à l'aide d'expressions régulières
+
+- `grep`: Permet de rechercher du texte dans un fichier ou dossier     
+	- `-w`: match only words
+	- `-v`: invert matchs
+	- `-B`: line before match
+	- `-A`: line after match
+	- `-C`: line before and after match
+	- `-l`: list files with matching content      
+		`$ grep -l 'main' *.c`        
+	- `-n`: line number
+`$ grep 'text' ./filename.txt`    
+`$ grep -i -R 'TEXT' ./folder1/`
+`$ grep -c 'counting' ./file2.txt
+- `sed`: Find/Replace/Insert/Delete      
+`$ sed 's/unix/linux/p' geekfile.txt`     
+`$ sed 1,3 's/unix/linux/2' geekfile.txt`
+`$ sed 's/unix/linux/g' geekfile.txt`
+`$ sed '1d;4d' test.txt`: Delete ligne 1 **et** 4
+`$ sed '/^#/d;/_/d' test.txt`: Delete ligne qui commence par "#" et une ligne comportant un "_"      
+
+
+## 4. Édition de base des fichiers
+
+- i - Insert at cursor (goes into insert mode)
+- a - Write after cursor (goes into insert mode)
+- A - Write at the end of line (goes into insert mode)
+- ESC - Terminate insert mode.
+- u - Undo last change.
+- U - Undo all changes to the entire line.
+- o - Open a new line (goes into insert mode)
+- dd - Delete line.
+
