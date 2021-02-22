@@ -2,7 +2,7 @@
 
 ## Init
 
-`docker run -t -i ubuntu /bin/bash --name compassionate_newton`
+`docker run -t --name intro_unix -i ubuntu /bin/bash`
 
 ## Exec
 
