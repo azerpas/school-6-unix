@@ -80,8 +80,8 @@ Il n'y a que le superuser qui peut lancer des commandes avec nice<0 (+fort)
 		`$ grep -l 'main' *.c`        
 	- `-n`: line number
 `$ grep 'text' ./filename.txt`    
-`$ grep -i -R 'TEXT' ./folder1/`
-`$ grep -c 'counting' ./file2.txt
+`$ grep -i -R 'TEXT' ./folder1/`     
+`$ grep -c 'counting' ./file2.txt`
 - `sed`: Find/Replace/Insert/Delete      
 `$ sed 's/unix/linux/p' geekfile.txt`     
 `$ sed 1,3 's/unix/linux/2' geekfile.txt`
