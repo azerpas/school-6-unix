@@ -64,3 +64,8 @@ Handle app in Red Hat
 - `apt-get upgrade pkg`
 
 yum the same
+
+# Chap 4
+
+## Mount / Umount
+
