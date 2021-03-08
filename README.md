@@ -6,5 +6,5 @@
 
 ## Exec
 
-`docker exec -it compassionate_newton /bin/bash`
+`docker exec -it intro_unix /bin/bash`
 
