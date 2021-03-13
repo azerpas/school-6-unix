@@ -20,7 +20,9 @@ Show date
 ## Users
 
 #### 3 types:
-- 
+- user
+- groups
+- others 
 
 ### Create a user
 `useradd $username`
@@ -44,3 +46,16 @@ UID = 0 -> Root
 - `n`: next occurence
 - `N`: prec
 
+## Permissions
+
+| --- | 0 | 000 |
+|-----|---|-----|
+| --x | 1 | 001 |
+| -w- | 2 | 010 |
+| -wx | 3 | 011 |
+| r-- | 4 | 100 |
+| r-x | 5 | 101 |
+| rw- | 6 | 110 |
+| rwx | 7 | 111 |
+
+`chmod user|group|other file_path`
