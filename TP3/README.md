@@ -12,7 +12,7 @@ First program that starts at computer launch.
 - Plug and Play 
 - And add support for disks
 
-`hdparm [option] [device]`     
+`hdparm [option] [device]`: get information on hard drive disk       
 - `g` geometry 
 - `c` status
 - `v` verbose 
