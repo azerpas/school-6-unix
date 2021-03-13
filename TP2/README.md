@@ -5,10 +5,25 @@
 - `cat`, `tac`, read & print out
 - `expand` tab to spaces
 - `unexpand`: spaces to tab
-- `head` `tail`: start or end of file
+- `head` `tail`: start or end of file     
+`-n 2`: first two lines     
+`-c 2`: last two lines
+- `paste` paste lines from two files inside one file
+```
+1  +  b  = 1 b 
+2  +  c    2 c
+```
 - `join` join lines from two files
+```
+1 a + 1 b  = 1 a b 
+2 c + 2 c    2 c c
+```
 - `nl` show lines numbers
 - `split` split file in multiple files
+- `uniq` remove duplicate lines
+- `sort` sort the file
+-r: Inversed    
+-o: output
 
 ### Create file
 `touch my-file.txt -lt`
@@ -65,14 +80,17 @@ Print (cat) to Shell output the content of all files starting with "f*"
 ### /dev/null
 
 Used to delete error messages    
-`grep try /etc/* 2>/dev/null`
+`grep try /etc/* 2>/dev/null`      
+`grep try /etc/*>/dev/null 2>/dev/null`
 
 ## Process
 
+### Contains
 - pid: ID
 - pwd: current dir
 - env
 - stdin, stdout, stderr
+- an executed program
 
 **Bash** is a process     
 
